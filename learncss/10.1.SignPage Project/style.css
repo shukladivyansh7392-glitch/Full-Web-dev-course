@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(circle at 0% 0%, #263cff 0, transparent 25%),
+        radial-gradient(circle at 100% 100%, #3b22a8 0, transparent 25%),
+        #050d2b;
+
+    color: white;
+}
+
+/* Main Card */
+
+.signup-container {
+    width: 700px;
+    padding: 45px 55px;
+
+    background: rgba(7, 20, 55, 0.88);
+
+    border: 1px solid #218cff;
+    border-radius: 22px;
+
+    box-shadow:
+        0 0 40px rgba(34, 130, 255, 0.15),
+        inset 0 0 30px rgba(50, 100, 255, 0.04);
+}
+
+/* Logo */
+
+.logo {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.logo i {
+    color: #27a9ff;
+    margin-right: 8px;
+}
+
+.logo span span {
+    color: #6b8cff;
+}
+
+/* Heading */
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+h1 span {
+    background: linear-gradient(90deg, #28b6ff, #c05cff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Subtitle */
+
+.subtitle {
+    text-align: center;
+    color: #aebbd8;
+    line-height: 1.6;
+    font-size: 17px;
+    margin-bottom: 32px;
+}
+
+/* Input */
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #d7e1f8;
+    margin-bottom: 9px;
+}
+
+.input-box {
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #34527f;
+    border-radius: 13px;
+
+    background: rgba(20, 39, 78, 0.65);
+
+    padding: 0 18px;
+
+    transition: 0.3s;
+}
+
+.input-box i {
+    color: #aabbdc;
+    font-size: 19px;
+    margin-right: 15px;
+}
+
+.input-box input {
+    width: 100%;
+
+    background: transparent;
+    border: none;
+    outline: none;
+
+    color: white;
+    font-size: 16px;
+}
+
+.input-box input::placeholder {
+    color: #8b9aba;
+}
+
+.input-box:focus-within {
+    border-color: #28a9ff;
+    box-shadow: 0 0 12px rgba(40, 169, 255, 0.2);
+}
+
+.input-box .eye {
+    margin-right: 0;
+    cursor: pointer;
+}
+
+/* Terms */
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin: 8px 0 25px;
+
+    color: #aebbd8;
+    font-size: 14px;
+}
+
+.terms input {
+    width: 18px;
+    height: 18px;
+    accent-color: #5878ff;
+}
+
+.terms a,
+.login a {
+    color: #398cff;
+    text-decoration: none;
+}
+
+.terms a:hover,
+.login a:hover {
+    text-decoration: underline;
+}
+
+/* Button */
+
+.signup-btn {
+    width: 100%;
+    height: 60px;
+
+    border: none;
+    border-radius: 13px;
+
+    background: linear-gradient(
+        90deg,
+        #19b7ff,
+        #405cff,
+        #c34cff
+    );
+
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 25px rgba(67, 96, 255, 0.3);
+
+    transition: 0.3s;
+}
+
+.signup-btn i {
+    margin-left: 10px;
+}
+
+.signup-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 30px rgba(83, 86, 255, 0.5);
+}
+
+/* Divider */
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin: 28px 0;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+    background: #39527c;
+}
+
+.divider p {
+    color: #9ba9c5;
+    font-size: 14px;
+}
+
+/* Login */
+
+.login {
+    text-align: center;
+    color: #aebbd8;
+    font-size: 15px;
+}
+
+.login a {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+/* Mobile */
+
+@media (max-width: 750px) {
+
+    .signup-container {
+        width: 90%;
+        padding: 35px 25px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .signup-container {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 31px;
+    }
+
+    .terms {
+        align-items: flex-start;
+    }
+}
